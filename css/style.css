@@ -8,7 +8,10 @@
 
 header {
   padding: 1rem 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fff5f591;
+  position: absolute;
+  /* dung de ddee len  */
+  width: 100%;
 }
 .container {
   width: 75%;
@@ -25,6 +28,7 @@ header {
 
 .header__content .logo {
   text-decoration: none;
+  color: white;
 }
 
 .header__content i {
@@ -33,6 +37,7 @@ header {
 
 .header__content span {
   font-size: 2rem;
+  color: white;
 }
 
 .header__content nav ul {
@@ -49,6 +54,7 @@ header {
   /* color: white; */
   transition: all 0.5s;
   /* transition: hover co thoi gian */
+  color: white;
 }
 
 /* class active danh cho li minh no */
@@ -60,6 +66,8 @@ header {
 .header__content nav ul li:hover a {
   color: red;
 }
+
+/* carousel */
 
 #carousel {
   background-image: url(../img/home_slider.jpg);
@@ -93,4 +101,66 @@ header {
   border: 1px solid red;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.carousel__content button:hover {
+  background-color: #af2239;
+}
+
+/* services */
+
+#services {
+  background: black;
+  padding: 4.5rem 0;
+}
+
+.services_title p {
+  color: red;
+  font-weight: 200;
+}
+
+.services_title h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.services_title .customers {
+  color: #888888;
+}
+
+.services_title {
+  text-align: center;
+}
+
+.item_services {
+  background-color: white;
+  padding: 3.8rem;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.list_services {
+  display: flex;
+  justify-content: center;
+}
+.item_services i {
+  font-size: 2rem;
+}
+.item_services::after {
+  content: "";
+  width: 5px;
+  display: block;
+  height: 0;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.item_services:hover::after {
+  height: 100%;
+  transition: 1s;
 }

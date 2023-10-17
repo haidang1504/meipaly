@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- slick -->
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+
     <!-- link cdn -->
     <link
       rel="stylesheet"
@@ -65,7 +69,45 @@
     </section>
 
     <!-- SERVICES -->
-    <section id=" services"></section>
+    <section id="services">
+      <div class="services_title">
+        <p>SERVICES WE ARE OFFERING</p>
+        <h1>WE DESIGN DIGITAL PRODUCTS THAT HELP GROW <br />BUSINESSES.</h1>
+        <p class="customers">
+          We are committed to providing our customers with exceptional service
+          while offering <br />
+          our employees the best training.
+        </p>
+      </div>
+      <div class="service_content container">
+        <div class="list_services">
+          <div class="item_services">
+            <i class="fa-solid fa-dice-d6"></i>
+            <p>APP MOBILE DEVELOPMENT</p>
+          </div>
+          <div class="item_services">
+            <i class="fa-solid fa-dice-d6"></i>
+            <p>DIGITAL MARKETING</p>
+          </div>
+          <div class="item_services">
+            <i class="fa-solid fa-dice-d6"></i>
+            <p>SEA & CONTENT</p>
+          </div>
+          <div class="item_services">
+            <i class="fa-solid fa-dice-d6"></i>
+            <p>WEBSITE DEVELOPMENT</p>
+          </div>
+          <div class="item_services">
+            <i class="fa-solid fa-dice-d6"></i>
+            <p>DIGITAL MARKETING</p>
+          </div>
+          <div class="item_services">
+            <i class="fa-solid fa-dice-d6"></i>
+            <p>APP MOBILE DEVELOPMENT</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- blog -->
     <section id="blog"></section>
@@ -81,5 +123,26 @@
 
     <!-- footer -->
     <footer></footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="libs/slick/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".list_services").slick({
+          // setting-name: setting-value
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        });
+      });
+    </script>
   </body>
 </html>
