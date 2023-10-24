@@ -111,35 +111,42 @@ header {
 /* services */
 
 #services {
-  background: black;
-  padding: 4.5rem 0;
+  background-color: black;
 }
 
-.services_title p {
+.py-100 {
+  padding: 4.5rem 0;
+}
+.title p {
   color: red;
   font-weight: 200;
 }
 
-.services_title h1 {
+.title h1 {
   color: white;
   font-size: 2.8rem;
   font-weight: 500;
 }
 
-.services_title .customers {
+.title .customers {
   color: #888888;
 }
 
-.services_title {
+.title {
   text-align: center;
 }
 
 .item_services {
   background-color: white;
-  padding: 3.8rem;
   margin: 1rem;
   text-align: center;
   position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  flex-direction: column;
+  width: 200px;
 }
 
 .list_services {
@@ -163,4 +170,108 @@ header {
 .item_services:hover::after {
   height: 100%;
   transition: 1s;
+}
+
+.slick-dots li button:before {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}
+
+/* blog */
+
+#blog .title p {
+  color: gray;
+}
+
+#blog .title h1 {
+  color: black;
+}
+#blog .title .customers {
+  padding-bottom: 40px;
+}
+
+.blog_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(50%);
+}
+
+.blog_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.4rem;
+}
+.blog_item_1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.blog_item_10 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.blog_item {
+  position: relative;
+}
+.blog_overlay {
+  position: absolute;
+  top: 0;
+  background: #ff000069;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.blog_item:hover .blog_overlay {
+  opacity: 1;
+}
+.blog_overlay .blog_overlay_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.blog_overlay_text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.blog_overlay .blog_overlay_icon i {
+  background-color: white;
+  padding: 0.5rem;
+  color: black;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.blog_overlay .blog_overlay_icon i:hover {
+  background-color: black;
+  color: white;
+  transform: 0.5s;
+}
+
+.blog_overlay_text p {
+  color: gray;
+}
+.blog_overlay_text h3 {
+  color: white;
+}
+.blog_item:hover .blog_overlay .blog_overlay_icon i {
+  transform: translateY(0);
+}
+
+.blog_overlay_text {
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+.blog_item:hover .blog_overlay_text {
+  transform: translateY(0);
 }
