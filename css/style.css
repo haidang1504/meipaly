@@ -275,3 +275,89 @@ header {
 .blog_item:hover .blog_overlay_text {
   transform: translateY(0);
 }
+
+/* statistics */
+#statistics {
+  background-color: black;
+}
+
+.statistics_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.counter {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.statistics_item h3 {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+/* digital */
+
+#digital {
+  background-image: url(../img/bussiness_img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* hinh2 dung yen */
+}
+
+.digital_content video {
+  width: 100%;
+}
+
+/* contact */
+
+#contact .title h1 {
+  color: black;
+  font-size: 2.8rem;
+}
+
+#contact .title p {
+  color: gray;
+}
+
+.contact_content {
+  display: flex;
+}
+
+.contact_form {
+  width: 40%;
+  padding-left: 1rem;
+}
+
+.contact_map {
+  width: 60%;
+}
+
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form form input,
+.contact_form form textarea {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+}
+
+.contact_form form input[type="button"] {
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transform: 0.5s;
+}
+
+.contact_form form input[type="button"]:hover {
+  background-color: red;
+  border-color: red;
+}
