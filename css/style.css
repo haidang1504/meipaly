@@ -108,6 +108,12 @@ header {
   background-color: #af2239;
 }
 
+.carousel__content .arrow i {
+  font-size: 1.5rem;
+  animation-duration: 1s;
+  animation-name: arrow;
+  animation-iteration-count: infinite;
+}
 /* services */
 
 #services {
@@ -360,4 +366,91 @@ header {
 .contact_form form input[type="button"]:hover {
   background-color: red;
   border-color: red;
+}
+
+/* footer  */
+
+/* #footer {
+  background-color: black;
+}
+
+.footer_title {
+  display: flex;
+}
+
+.footer_left p {
+  color: white;
+  font-size: 0.8rem;
+} */
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  animation-name: around;
+  animation-duration: 2s;
+  animation-iteration-count: 2s;
+}
+
+@keyframes around {
+  /* from {}
+  to { } */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    left: 200px;
+  }
+
+  50% {
+    top: 200px;
+    left: 200px;
+  }
+
+  75% {
+    top: 200px;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+
+    left: 0;
+  }
+}
+
+@keyframes arrow {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+.backtotop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 2rem;
+  background-color: gray;
+  color: white;
+  padding: 7px 25px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
 }

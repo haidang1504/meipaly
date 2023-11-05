@@ -17,6 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- link animate  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- font awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -334,7 +339,7 @@
     <!-- DIGITAL  -->
     <section id="digital" class="py-100">
       <div class="title">
-        <p>OUR NEWS & ARTICLES</p>
+        <p class="wow animate__animated animate__wobble">OUR NEWS & ARTICLES</p>
         <h1>LATEST BLOG POSTS</h1>
         <p class="customers">
           We are committed to providing our customers with exceptional service
@@ -396,8 +401,26 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <footer></footer>
+    <!-- footer  -->
+    <!-- <footer id="footer" class="container py-100">
+      <div class="footer_title">
+        <div class="footer_left">
+          <p>© 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="footer_right">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer> -->
+
+    <!-- <div class="square"></div> -->
+
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -438,5 +461,13 @@
         // Your custom options
       });
     </script>
+
+    <script src="./libs/wowjs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script src="./libs/backtotop/util.js"></script>
+    <script src="./libs/backtotop/main.js"></script>
   </body>
 </html>
